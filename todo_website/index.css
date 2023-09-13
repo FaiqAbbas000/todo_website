@@ -18,10 +18,17 @@
     background-color: darkorchid;
     border-radius: 15px;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #leftSlider ,#rightSlider{
     display: inline-block;
+}
+
+h1{
+    color: white;
 }
 
 #leftSlider{

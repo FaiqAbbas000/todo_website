@@ -12,19 +12,19 @@
     <div id="loginDiv">
         <div id="loginTittle">Login</div>
         <div>
-            <form>
+            <form id="loginForm">
                 <label class="alignment">User Name</label><br>
-                <input type="text" name="username" id="username" class="alignment" placeholder="abc@gmail.com"><br>
-                <span id="usernameError" class="alignment"></span><br>
+                <input type="text" name="username" id="loginUsername" class="alignment" placeholder="abc@gmail.com"><br>
+                <span id="loginUsernameError" class="alignment"></span><br>
                 <label class="alignment">Password</label><br>
-                <input type="password" name="password" id="password" class="alignment" placeholder="abc@123"><br>
-                <span id="passwordError" class="alignment"></span><br>
+                <input type="password" name="password" id="LoginPassword" class="alignment" placeholder="abc@123"><br>
+                <span id="LoginPasswordError" class="alignment"></span><br>
                 <input type="submit" value="Login" id="loginBtn" class="alignment">
             </form>
         </div>
         <div id="singupspan">
             <Span>
-                <a>Create an account</a>
+                <a href="#" onclick="signupDiv()">Create an account</a>
             </Span>
         </div>
     </div>
@@ -34,26 +34,28 @@
             signup
         </div>
         <div>
-            <form>
+            <form id="signupform">
                 <label>Name</label><br>
                 <input type="text" name="name" id="name" class="alignment" placeholder="example"><br>
                 <span id="nameError" class="alignment"></span><br>
                 <label>User Name</label><br>
-                <input type="text" name="username" id="username" class="alignment" placeholder="abc@gmail.com"><br>
-                <span id="usernameError" class="alignment"></span><br>
+                <input type="text" name="username" id="signupUsername" class="alignment" placeholder="abc@gmail.com"><br>
+                <span id="signupUsernameError" class="alignment"></span><br>
                 <label>password</label><br>
-                <input type="password" name="password" id="password" class="alignment" placeholder="abc@123"><br>
-                <span id="passwordError" class="alignment"></span><br>
+                <input type="password" name="password" id="signupPassword" class="alignment" placeholder="abc@123"><br>
+                <span id="signupPasswordError" class="alignment"></span><br>
                 <label>Confirm Password</label><br>
-                <input type="confirmpassword" name="confirmpassword" id="confirmpassword" class="alignment" placeholder="abc@123"><br>
-                <span id="confirmpassword" class="alignment"></span><br>
-                <input type="submit" value="signup" id="signupBtn" class="alignment">
+                <input type="password" name="confirmpassword" id="confirmpassword" class="alignment" placeholder="abc@123"><br>
+                <span id="confirmpasswordError" class="alignment"></span><br>
+                <input type="submit" value="signup" id="signupBtn"   class="alignment">
             </form>
         </div>
         <div id="loginspan">
-            <Span><a>already have account</a></Span>
+            <Span><a href="#" onclick="loginDiv()">already have account</a></Span>
         </div>
     </div>
+    <script src="validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>
