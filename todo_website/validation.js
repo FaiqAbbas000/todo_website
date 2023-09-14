@@ -231,25 +231,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
-document.addEventListener("DOMContentLoaded", function(){
-    var logoutUser = document.getElementById("logoutUser");
-
-    logoutUser.addEventListener('onclick', function(close){
-        // close.preventDefault();
-    
-        // var currentUser = JSON.parse(localStorage.getItem("currentUser"))||[];
-        localStorage.removeItem("currentUser");
-        // currentUser.clear()
-        
-    })
-})
 
 
-var currentUser = JSON.parse(localStorage.getItem("currentUser")) || [];
-var displayUser = document.getElementById("displayUser");
-if(displayUser){
-    displayUser.textContent= "Wellcome "+ currentUser.NAME ;
-}
+
 
 
 
